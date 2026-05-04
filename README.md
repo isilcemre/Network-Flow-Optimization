@@ -1,5 +1,35 @@
 # Network Flow Optimization: Max-Truck & Min-Cost Logistics
 
+This project is a **Network Flow** simulation developed to optimize the transportation network between cities. In a scenario where intercity roads have both a specific truck capacity and a distance cost, it calculates maximum efficiency and minimum cost.
+
+## Project Purpose
+
+The project solves two fundamental logistics problems:
+1. **Maximum Flow (Max-Flow):** What is the maximum number of trucks that can be sent from the source city to the destination city without exceeding road capacities? (Calculated using the **Edmonds-Karp** algorithm).
+2. **Minimum Cost Maximum Flow (Min-Cost Max-Flow):** How can we transport the maximum number of trucks while minimizing the total distance traveled (cost)? (Calculated using **Successive Shortest Path** and **Bellman-Ford/SPFA** logic).
+
+## Technical Specifications
+
+* **Algorithms:** Edmonds-Karp (BFS-based) and Min-Cost Max-Flow.
+* **Data Structure:** Residual Graph and Adjacency List.
+* **Memory Management:** Efficient flow updates with dynamic memory allocation and reverse edge tracking.
+
+## File Structure
+
+* `main.c`: The main code containing all optimization logic and graph data structures.
+* `in1.txt`: The input file containing the sample network structure.
+* `task2.exe`: The compiled executable file of the project.
+
+## Algorithms
+This software performs the following complex operations in the background:
+* **Edmonds-Karp:** Finds the maximum flow (total number of trucks).
+* **Successive Shortest Path:** Performs cost optimization to send this flow via the cheapest route.
+* **Residual Graph:** Uses the residual graph structure for backward tracking of the flow.
+
+  
+
+# Ağ Akış Optimizasyonu: Maksimum Kamyon ve Minimum Maliyet Lojistiği
+
 Bu proje, şehirler arasındaki ulaşım ağını optimize etmek için geliştirilmiş bir **Ağ Akış (Network Flow)** simülasyonudur. Şehirler arası yolların hem belirli bir kamyon kapasitesi hem de bir mesafe maliyeti olduğu bir senaryoda, maksimum verimliliği ve minimum maliyeti hesaplar.
 
 ## Proje Amacı
